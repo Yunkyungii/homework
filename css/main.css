@@ -1,6 +1,35 @@
-.inner {
+.inner>* {
     width: 1200px;
     margin: 0 auto;
+}
+
+.top_bar {
+    display: flex;
+    line-height: 50px;
+    padding: 10px 0;
+}
+
+.top_bar .slogan {
+
+    margin-right: auto;
+}
+
+.top_bar .slogan img {
+    width: 300px;
+}
+
+.top_bar .service {
+    display: flex;
+    gap: 20px;
+}
+
+.gnb ul {
+    display: flex;
+    gap: 20px;
+    color: #999;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 .main {
@@ -36,4 +65,9 @@
 
 .mainVisual .itm01 {
     background: url(../images/main.jpg) no-repeat center center/cover;
+}
+
+.article .figure {
+    display: flex;
+    width: 300px
 }
