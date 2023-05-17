@@ -1,3 +1,7 @@
+body {
+    height: 200vh;
+}
+
 .inner>* {
     width: 1200px;
     margin: 0 auto;
@@ -33,41 +37,135 @@
 }
 
 .main {
+
     display: flex;
     align-items: center;
     background: #f9f9f9;
     height: 100px;
 }
 
-.main .inner {
-    position: relative;
-}
-
-.main .inner h2 {
-    position: absolute;
-    top: -10px;
-    right: 0;
-
-    font-size: 20px;
-}
-
-.main .inner span {
-    font-size: 30px;
-    font-weight: 500;
-    margin: 0 0 10px 0;
-}
-
-
 
 .mainVisual .itm {
     height: 600px;
+
 }
 
 .mainVisual .itm01 {
     background: url(../images/main.jpg) no-repeat center center/cover;
 }
 
-.article .figure {
+.mainVisual .itm02 {
+    background: url(../images/desert.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .itm03 {
+    background: url(../images/family.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+}
+
+.mainVisual .slick-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mainVisual .slick-dots>* {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.mainVisual .slick-dots li button {
+    background: #fff;
+    padding: 1px;
+    font-size: 0;
+    width: 60px;
+    height: 1px;
+    border: none;
+    outline: none;
+}
+
+.mainVisual .slick-dots li.slick-active button {
+    background: #333;
+}
+
+.mainVisual .inner {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    font-size: 40px;
+    color: #fff;
+    /* text-align: center; */
+}
+
+.mainVisual .inner h2 {
+    font-weight: 700;
+
+}
+
+.mainVisual .inner p {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 30px 0 0 0;
+}
+
+/* .article {
+    padding-top: 50px;
+} */
+
+
+
+.article h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 100px auto 30px auto;
+}
+
+.article p {
+    text-align: center;
+    font-size: 16px
+}
+
+.article .mainContent {
     display: flex;
-    width: 300px
+    gap: 30px;
+    margin: 50px auto 0 auto;
+    padding: 0 15px;
+    /* display: flex;
+    width: 1200px;
+    gap: 30px;
+    margin: 50px auto 0 auto; */
+
+}
+
+.article .mainContent .figure {
+    flex: 1;
+
+}
+
+.article .mainContent .box img {
+    width: 100%;
+}
+
+.article .mainContent .tit {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.article .mainContent .desc {
+    border-top: 2px solid #f9f9f9;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 16px
 }
