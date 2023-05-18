@@ -7,5 +7,13 @@ $(function () {
         pauseOnHover: false,
         draggable: true,
     });
+
+    $('.mainVisual .arrows .left').on('click', function () {
+        $('.mainSlide').slick('slickPrev');
+    });
+
+    $('.mainVisual .arrows .right').on('click', function () {
+        $('.mainSlide').slick('slickNext');
+    });
 })
 
