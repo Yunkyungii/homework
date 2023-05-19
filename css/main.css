@@ -4,7 +4,7 @@
     padding: 0 15px;
 }
 
-.header {
+#header {
     position: sticky;
     top: 0;
     background: #fff;
@@ -248,7 +248,38 @@
 }
 
 .footer address {
-    line-height: 80px;
+    line-height: 40px;
 }
+
+.footer .top strong {
+    font-size: 30px;
+    font-weight: 500;
+    color: #5ad3c0;
+}
+
+.datePicker {
+    width: 160px;
+    height: 75px;
+    opacity: 0.95;
+    background-color: #999;
+    color: #f9f9f9;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10%;
+    left: -43px;
+    /* z-index: 9; */
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    rotate: 90deg;
+}
+
+.datePicker:hover {
+    background: #5ad3c0;
+}
+
 
 /* top 보다는 bottom에 margin 이나 padding 주기 */

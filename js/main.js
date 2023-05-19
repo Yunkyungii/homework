@@ -15,5 +15,7 @@ $(function () {
     $('.mainVisual .arrows .right').on('click', function () {
         $('.mainSlide').slick('slickNext');
     });
+
+
 })
 
