@@ -237,7 +237,7 @@
 }
 
 .footer {
-    background: #333;
+    background: #444;
     color: #fff;
     text-align: center;
 }
@@ -275,6 +275,7 @@
     border-radius: 10px;
     outline: none;
     rotate: 90deg;
+    transition: 0.5s;
 }
 
 .datePicker:hover {
